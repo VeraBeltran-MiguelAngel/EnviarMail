@@ -8,7 +8,7 @@ if (isset($_GET["solicitaNuevaPass"])) {
 
     try {
         $data = json_decode(file_get_contents("php://input"));
-        $username = $data->username; //email del usuario
+        $username = $data->username; //email del usuariox
 
         $conexionBD = conectarBaseDatos();
         $emailExiste = emailRegistrado($conexionBD, $username);
